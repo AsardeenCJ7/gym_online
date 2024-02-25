@@ -36,6 +36,7 @@ echo "<script>window.location.href='add-category.php'</script>";
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,9 +60,6 @@ echo "<script>window.location.href='add-category.php'</script>";
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <?php include 'include/sidebar.php'; ?>
     <main class="app-content">
-        <marquee onMouseOver="this.stop()" style="color: #e92f33;" onMouseOut="this.start()">This is a Code Camp BD's
-            free source code for educational use only. It can never be used for commercial purposes. Don't forget to
-            take code camp BD permission if needed!</marquee>
         <h3>Categories</h3>
         <hr />
 
@@ -108,7 +106,7 @@ echo "<script>window.location.href='add-category.php'</script>";
                         <table class="table table-hover table-bordered" id="sampleTable">
                             <thead>
                                 <tr>
-                                    <th>Sr.No</th>
+                                    <th>ID</th>
                                     <th>Name</th>
                                     <th>Action</th>
 
@@ -131,7 +129,8 @@ echo "<script>window.location.href='add-category.php'</script>";
                                     <td><?php echo($cnt);?></td>
                                     <td><?php echo htmlentities($result->category_name);?></td>
                                     <td>
-                                        <!-- <a href="add-category.php?cid=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary" type="button">Edit</button></a>  -->
+                                        <!-- <a href="add-category.php?cid=<?php echo htmlentities($result->id);?>"><button
+                                                class="btn btn-primary" type="button">Edit</button></a> -->
                                         <a href="add-category.php?del=<?php echo htmlentities($result->id);?>"><button
                                                 class="btn btn-danger" type="button">Delete</button></a>
                                     </td>

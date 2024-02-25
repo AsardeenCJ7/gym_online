@@ -29,19 +29,6 @@ if (strlen($_SESSION['adminid']==0)) {
     <?php include 'include/sidebar.php'; ?>
     <main class="app-content">
 
-        <marquee onMouseOver="this.stop()" style="color: #e92f33;" onMouseOut="this.start()">This is a Code Camp BD's
-            free source code for educational use only. It can never be used for commercial purposes. Don't forget to
-            take code camp BD permission if needed!</marquee>
-        <!-- 
-
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
         <div class="row">
             <div class="col-md-12">
                 <div class="tile">
@@ -81,16 +68,7 @@ if (strlen($_SESSION['adminid']==0)) {
                   foreach($results as $result)
                   {
                   ?>
-                            <!-- 
 
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
                             <tbody>
                                 <tr>
                                     <td><?php echo($cnt);?></td>
@@ -114,16 +92,7 @@ if (strlen($_SESSION['adminid']==0)) {
             </div>
         </div>
     </main>
-    <!-- 
 
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
     <?php include_once 'include/footer.php' ?>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -140,16 +109,7 @@ if (strlen($_SESSION['adminid']==0)) {
     $('#sampleTable').DataTable();
     </script>
 </body>
-<!-- 
 
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
 
 </html>
 <?php } ?>

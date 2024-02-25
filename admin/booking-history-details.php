@@ -56,9 +56,7 @@ echo "<script> window.location.href='booking-history.php';</script>";
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <?php include 'include/sidebar.php'; ?>
-    <marquee onMouseOver="this.stop()" style="color: #e92f33;" onMouseOut="this.start()">This is a Code Camp BD's free
-        source code for educational use only. It can never be used for commercial purposes. Don't forget to take code
-        camp BD permission if needed!</marquee>
+
 
     <main class="app-content">
 
@@ -162,16 +160,7 @@ $gpayment+=$tpayment;
                                 <th>Total</th>
                                 <th><?php echo $gpayment;?></th>
                             </tr>
-                            <!-- 
 
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
 
                         </table>
                         <?php } ?>
@@ -186,16 +175,6 @@ $gpayment+=$tpayment;
 echo ' <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tack Action</button>';                }
 
                ?>
-                            <!-- 
-
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
 
                         </td>
                     </div>
@@ -226,16 +205,7 @@ echo ' <button type="button" class="btn btn-primary" data-toggle="modal" data-ta
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-        <!-- 
 
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
         <!-- Modal content-->
         <div class="modal-content">
 
@@ -271,16 +241,6 @@ echo ' <button type="button" class="btn btn-primary" data-toggle="modal" data-ta
 
     </div>
 </div>
-<!-- 
-
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
 
 <script>
 $(document).ready(function() {
@@ -297,13 +257,3 @@ $(document).ready(function() {
 });
 </script>
 <?php } ?>
-<!-- 
-
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->

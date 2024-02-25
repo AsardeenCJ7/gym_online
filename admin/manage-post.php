@@ -8,9 +8,10 @@ if (strlen($_SESSION['adminid']==0)) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta name="description" content="Vali is a responsive">
-  
+
     <title>Admin | Manage Package </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,47 +19,40 @@ if (strlen($_SESSION['adminid']==0)) {
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body class="app sidebar-mini rtl">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="app sidebar-mini rtl">
     <!-- Navbar-->
- <?php include 'include/header.php'; ?>
+    <?php include 'include/header.php'; ?>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-     <?php include 'include/sidebar.php'; ?>
-      <marquee onMouseOver="this.stop()" style="color: #e92f33;" onMouseOut="this.start()">This is a Code Camp BD's free source code for educational use only. It can never be used for commercial purposes. Don't forget to take <a target="_blank" href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> permission if needed!</marquee>
+    <?php include 'include/sidebar.php'; ?>
+
 
     <main class="app-content">
-      	<!-- 
 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="tile-body">
+                        <h3>Manage Packages</h3>
+                        <hr />
+                        <table class="table table-hover table-bordered" id="sampleTable">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No</th>
+                                    <th>Category</th>
+                                    <th>Package Type</th>
+                                    <th>Title</th>
+                                    <th>Package Duratiobn</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
 
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="tile">
-            <div class="tile-body">
-               <h3>Manage Packages</h3>
-              <hr />
-              <table class="table table-hover table-bordered" id="sampleTable">
-                <thead>
-                  <tr>
-                    <th>Sr.No</th>
-                    <th>Category</th>
-                    <th>Package Type</th>
-                    <th>Title</th>
-                    <th>Package Duratiobn</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-              
-                   <?php
+                            <?php
                    include  'include/config.php';
                   $sql="SELECT t1.id as packageid,t2.*,t3.*,t1.* FROM tbladdpackage as t1
                     join tblcategory as t2
@@ -75,49 +69,33 @@ if (strlen($_SESSION['adminid']==0)) {
                   foreach($results as $result)
                   {
                   ?>
-	<!-- 
+
+                            <tbody>
+                                <tr>
+                                    <td><?php echo($cnt);?></td>
+                                    <td><?php echo htmlentities($result->category_name);?></td>
+                                    <td><?php echo htmlentities($result->PackageName);?></td>
+                                    <td><?php echo htmlentities($result->titlename);?></td>
+                                    <td><?php echo htmlentities($result->PackageDuratiobn);?></td>
+                                    <td><?php echo htmlentities($result->Price);?></td>
+                                    <?php $id=$result->category_name;?>
+                                    <td>
+
+                                        <a href="edit-post.php?pid=<?php echo htmlentities($result->packageid);?>"><span
+                                                class="btn btn-success">Edit</span>
+                                    </td>
+                                </tr>
 
 
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
-                <tbody>
-                  <tr>
-                    <td><?php echo($cnt);?></td>
-                    <td><?php echo htmlentities($result->category_name);?></td>
-                  <td><?php echo htmlentities($result->PackageName);?></td>
-                  <td><?php echo htmlentities($result->titlename);?></td>
-                  <td><?php echo htmlentities($result->PackageDuratiobn);?></td>
-                  <td><?php echo htmlentities($result->Price);?></td>
-                  <?php $id=$result->category_name;?>
-                  <td>
+                            </tbody>
 
-                   <a href="edit-post.php?pid=<?php echo htmlentities($result->packageid);?>"><span class="btn btn-success">Edit</span></td>
-                  </tr>
-                   
-                 	<!-- 
-
-
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
-                </tbody>
-
-     <!--    // end modal popup code........ -->
-                 <?php  $cnt=$cnt+1; } } ?>
-              </table>
+                            <!--    // end modal popup code........ -->
+                            <?php  $cnt=$cnt+1; } } ?>
+                        </table>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </main>
     <?php include_once 'include/footer.php' ?>
     <!-- Essential javascripts for application to work-->
@@ -131,17 +109,11 @@ if (strlen($_SESSION['adminid']==0)) {
     <!-- Data table plugin-->
     <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript">$('#sampleTable').DataTable();</script>
-   	<!-- 
+    <script type="text/javascript">
+    $('#sampleTable').DataTable();
+    </script>
 
+</body>
 
-	- Author Name: MH RONY.
-	- GigHub Link: https://github.com/dev-mhrony
-	- Facebook Link:https://www.facebook.com/dev.mhrony
-	- Youtube Link: <a href = "https://www.youtube.com/@codecampbdofficial"> Code Camp BD</a>
-	- for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-	- Visit My Website : https://dev-mhrony.com
-	 -->
-  </body>
 </html>
 <?php } ?>

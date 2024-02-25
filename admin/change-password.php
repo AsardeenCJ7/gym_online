@@ -53,10 +53,7 @@ $error="Your current password is not valid.";
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <?php include 'include/sidebar.php'; ?>
-    <marquee onMouseOver="this.stop()" style="color: #e92f33;" onMouseOut="this.start()">This is a Code Camp BD's free
-        source code for educational use only. It can never be used for commercial purposes. Don't forget to take <a
-            target="_blank" href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> permission if needed!
-    </marquee>
+
 
     <main class="app-content">
         <div class="row">

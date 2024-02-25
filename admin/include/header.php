@@ -1,6 +1,6 @@
- <header style="background-color: #6063eb;" class="app-header"><a style="background-color: #6073eb;"
-         class="app-header__logo" href="index.php">GYM MS</a>
-     <!-- Sidebar toggle button--><a style="background-color: #6063eb;" class="app-sidebar__toggle" href="#"
+ <header style="background-color: #007bff;" class="app-header"><a style="background-color: #007bff;"
+         class="app-header__logo" href="index.php">FFH Portal</a>
+     <!-- Sidebar toggle button--><a style="background-color: #007bff;" class="app-sidebar__toggle" href="#"
          data-toggle="sidebar" aria-label="Hide Sidebar"></a>
      <!-- Navbar Right Menu-->
      <ul class="app-nav">
